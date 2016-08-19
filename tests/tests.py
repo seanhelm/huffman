@@ -4,7 +4,6 @@ from huffman.tree import Node, Tree
 
 
 class MyTestCase(unittest.TestCase):
-
     def test_node(self):
         node = Node('c', 50)
         self.assertEqual('c', node.char)
@@ -24,6 +23,7 @@ class MyTestCase(unittest.TestCase):
     def test_encode(self):
         tree = Tree('tests/encode_test.txt')
         self.assertEqual('111000101', tree.encode())
+
 
 if __name__ == '__main__':
     unittest.main()
